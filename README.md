@@ -14,10 +14,10 @@ Setup Instructions
 
 
 2. Installation
- Create a virtual environment:
+ (a).Create a virtual environment:
 >> python -m venv venv
 
- Activate the virtual environment:
+ (b).Activate the virtual environment:
 
 >>Windows: venv\Scripts\activate
  >>macOS/Linux: source venv/bin/activate
@@ -26,8 +26,7 @@ Setup Instructions
  Open a MySQL client and create the database and table:
 
 >>sql code:
-
-CREATE DATABASE users_db;
+>> CREATE DATABASE users_db;
 
 USE users_db;
 
@@ -51,7 +50,39 @@ Open your browser and go to:
 
 >>http://127.0.0.1:5000
 
-
+-------------------------------------------------------------------------------------------------------------
 Additional Notes
 Make sure MySQL is running before starting the application.
 All dependencies are listed in requirements.txt. If any issues arise during installation, ensure Python and MySQL versions are compatible.
+
+Features
+/users: View all users.
+/new_user: Add a new user.
+/users/<id>: Retrieve, update, or delete a specific user.
+
+Git Workflow:
+//Branching and Contributions
+1.Clone the repository:
+
+code->>git clone https://github.com/your-username/your-repo-name.git
+
+2.Create a new branch for your feature or bug fix:
+code->>git checkout -b feature/your-feature-name
+
+3.Make your changes and commit:
+code->> git add .
+>> git commit -m "Your commit message"
+
+4.Push your changes to the remote repository:
+ code->> git push origin feature/your-feature-name
+
+5.Open a pull request to merge your changes into the main branch.
+
+-----------------------------------------------------------------------------------------------------
+Contributing:-
+We welcome contributions! To contribute:
+
+1.Fork the repository.
+2.Create a new branch for your feature or fix.
+3.Follow the Git workflow outlined above.
+4.Submit a pull request for review.
